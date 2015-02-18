@@ -1,2 +1,2 @@
-Public package normally containing interfaces or other classes that can be exposed/shared with other bundles.
-By default this package is exported by the bundle.
+Internal (private) package that contains classes internal to this bundle. 
+Thus, the content of this package is not exported and cannot be used by other bundles.
