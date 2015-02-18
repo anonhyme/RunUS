@@ -1,0 +1,15 @@
+# Java #
+webapp/**/*.class
+webapp/**/*.war
+webapp/**/*.ear
+
+
+# Intellij #
+
+#webapp/*.mf
+webapp/.idea/.name
+webapp/.idea/**
+webapp/*.iml
+out/
+target/
+
