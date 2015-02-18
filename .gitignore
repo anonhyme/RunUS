@@ -1,0 +1,15 @@
+*.class
+
+# Package Files #
+Java-Library
+*.war
+*.ear
+.metadata
+.classpath
+Source_Code/*
+*.cmd
+
+# Intellij #
+.idea/
+*.iml
+*.iws
