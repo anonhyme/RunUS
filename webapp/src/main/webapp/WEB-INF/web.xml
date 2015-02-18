@@ -4,7 +4,7 @@
 	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
-    <display-name>regexApp</display-name>
+    <display-name>runUS</display-name>
 
     <!-- Context configuration for the application (all servlet have have access
         to it) -->
@@ -19,7 +19,7 @@
 
     <!-- Context configuration for appServlet ("main servlet") -->
     <servlet>
-        <servlet-name>regexApp-servlet</servlet-name>
+        <servlet-name>runUsApp-servlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -29,7 +29,7 @@
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>regexApp-servlet</servlet-name>
+        <servlet-name>runUsApp-servlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 

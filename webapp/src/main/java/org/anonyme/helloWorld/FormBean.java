@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 public class FormBean {
     @NotEmpty
     private String name;
-
+    
     public String getName() {
         return name;
     }
