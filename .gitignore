@@ -1,7 +1,4 @@
 *.class
-
-# Package Files #
-Java-Library
 *.war
 *.ear
 .metadata
@@ -10,6 +7,4 @@ Source_Code/*
 *.cmd
 
 # Intellij #
-.idea/
-*.iml
-*.iws
+webapp/.idea/
