@@ -1,0 +1,1 @@
+http://www.mkyong.com/spring-security/spring-security-hibernate-xml-example/
