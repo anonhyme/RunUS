@@ -1,10 +1,15 @@
-*.class
-*.war
-*.ear
-.metadata
-.classpath
-Source_Code/*
-*.cmd
+# Java #
+webapp/**/*.class
+webapp/**/*.war
+webapp/**/*.ear
+
 
 # Intellij #
-webapp/.idea/
+
+webapp/*.mf
+webapp/.idea/.name
+webapp/.idea/**
+webapp/*.iml
+out/
+target/
+
