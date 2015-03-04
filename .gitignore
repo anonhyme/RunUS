@@ -1,14 +1,14 @@
 # Java #
-webapp/**/*.class
-webapp/**/*.war
-webapp/**/*.ear
+projetS5/**/*.class
+projetS5/**/*.war
+projetS5/**/*.ear
 
 
 # Intellij #
 
-webapp/*.mf
-webapp/.idea/**
-webapp/*.iml
+projetS5/*.mf
+projetS5/.idea/**
+projetS5/*.iml
 out/
 target/
 
