@@ -5,6 +5,7 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.socket.WebSocketSession;
 
 /**
  * Created by antoine on 3/2/2015.
@@ -22,6 +23,7 @@ public class HomeController {
 
     @RequestMapping("/websocket/SockJsExample")
     public ModelAndView webSocketExample() {
+
         ModelAndView mav = new ModelAndView("SockJsExample");
 //        mav.addObject("enterWorld", "Enter World!");
         return mav;

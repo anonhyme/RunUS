@@ -5,6 +5,7 @@ import org.anonymus.handler.MyHandler;
 import org.anonymus.model.Runner;
 import org.anonymus.service.RunnerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -43,13 +45,16 @@ public class RunnerController {
         return mav;
     }
     
+
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public ModelAndView runnerListPage() {
-        ModelAndView mav = new ModelAndView("runner/runner-list");
+    public ModelAndView runnerListPage(HttpSession session) {
+
+        ModelAndView mav = new ModelAndView("runner/runner-list").addObject("message", session.getAttribute("msg"));
         List<Runner> runnerList = runnerService.findAll();
         mav.addObject("runnerList", runnerList);
         return mav;
     }
+    
     
     @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
     public ModelAndView editRunnerPage(@PathVariable Integer id) {

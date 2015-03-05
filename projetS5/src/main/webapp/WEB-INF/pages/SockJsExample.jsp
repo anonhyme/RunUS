@@ -28,7 +28,7 @@
         }
 
         function connect() {
-            var socket = new SockJS('/fuckyou');
+            var socket = new SockJS('/hello');
             stompClient = Stomp.over(socket);
             stompClient.connect({}, function (frame) {
                 setConnected(true);
@@ -57,6 +57,7 @@
             p.appendChild(document.createTextNode(message));
             response.appendChild(p);
         }
+        connect();
     </script>
 </head>
 <body>
