@@ -49,8 +49,10 @@ http://www.springframework.org/schema/aop/spring-aop-3.1.xsd ">
     </bean>
     
     <!-- Importing java-config class, which are annotated with @Configuration -->
-    <bean name="SomeJavaConfig" class="org.anonymus.config.DataBaseConfig"/>
-    <!--<bean name="socketConfig2" class="org.anonymus.config.WebSocketConfig"/>-->
-    <bean name="socketConfig" class="org.anonymus.config.SockJsConfig"/>
+    <bean name="baseConfig" class="org.anonymus.config.BaseConfig"/>
+    <bean name="websocketMbed" class="org.anonymus.config.WebSocketConfig"/>
+    <bean name="socketConfigLocal" class="org.anonymus.config.SockJsConfig"/>
+    <!--<bean name="securityConfig" class="org.anonymus.config.WebSecurityConfig"/>-->
+
 
 </beans>

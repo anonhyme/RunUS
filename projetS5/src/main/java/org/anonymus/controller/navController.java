@@ -11,12 +11,18 @@ import org.springframework.web.socket.WebSocketSession;
  * Created by antoine on 3/2/2015.
  */
 @Controller
-@RequestMapping(value="/" )
-public class HomeController {
+public class NavController {
     
     @RequestMapping("/")
     public ModelAndView home() {
         ModelAndView mav = new ModelAndView("index");
+//        mav.addObject("enterWorld", "Enter World!");
+        return mav;
+    }
+    
+    @RequestMapping("/loginpage")
+    public ModelAndView loginPage() {
+        ModelAndView mav = new ModelAndView("loginpage");
 //        mav.addObject("enterWorld", "Enter World!");
         return mav;
     }

@@ -1,4 +1,4 @@
-package org.anonymus.hello;
+package org.anonymus.websocketExample;
 
 public class HelloMessage {
 

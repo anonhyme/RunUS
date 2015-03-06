@@ -18,8 +18,8 @@ import java.io.IOException;
 /**
  * Created by antoine on 3/3/2015.
  */
-public class MyHandler extends TextWebSocketHandler {
-    HttpSession httpSession;
+public class MbedHandler extends TextWebSocketHandler {
+//    HttpSession httpSession;
 
     @Autowired
     RunnerService runnerService;
@@ -27,7 +27,7 @@ public class MyHandler extends TextWebSocketHandler {
     @Override
     public void afterConnectionEstablished(WebSocketSession session) {
         //Handle new connection here
-
+        //TODO find a way to separate different run session data in the db
     }
 
     @Override

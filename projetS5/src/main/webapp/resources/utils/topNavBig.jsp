@@ -1,11 +1,15 @@
 
 <%@ include file="taglib.jsp"%>
-<%--http://www.vizio.com/fr-ca/--%>
+
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="<c:url value="/resources/theme/bootstrap/css/bootstrap.css" />" media="screen" rel="stylesheet">
 <link href="<c:url value="/resources/theme/custom.css" />" media="screen" rel="stylesheet">
 <link href="<c:url value="/resources/theme/customTopNavBig.css" />" media="screen" rel="stylesheet">
-<script type="text/javascript" src="<c:out value="/resources/theme/bootstrap/js/bootstrap.min.js"/>"></script>
+
+<c:url value="/" var="Home"/>
+<c:url value="/runner/create" var="addRunner"/>
+<c:url value="/runner/list" var="listRunner"/>
+<c:url value="/websocket/SockJsExample" var="webSocket"/>
 
 <header id="master-header" class="master-header">
     <div class="container">
@@ -22,22 +26,19 @@
                             <a class="nav-link" href="${Home}">Home</a>
                         </li>
                         <li id="nav-form" class="nav-item-3">
-                            <a class="nav-link" href="#">Form</a>
+                            <a class="nav-link" href="${addRunner}">Add runner</a>
                         </li>
                         <li id="nav-ajax" class="nav-item-4">
-                            <a class="nav-link" href="${Ajax}">Ajax</a>
+                            <a class="nav-link" href="${listRunner}">Runner List</a>
                         </li>
                         <li id="nav-customer" class="nav-item-5">
-                            <a class="nav-link" href="#customer">Customer</a>
+                            <a class="nav-link" href="${webSocket}">WebSocket</a>
                         </li>
-                        <li id="nav-item-shop" class="nav-item-6">
-                            <a class="nav-link" href="${Bootstrap}">Bootstrap</a>
-                        </li>
-
                     </ul>
                 </nav>
             </div>
         </div>
     </div>
+
 </header>
 
