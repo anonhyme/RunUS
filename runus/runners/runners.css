@@ -1,0 +1,82 @@
+.runners-form .form-control {
+  height:60px;
+  font-size:24px;
+  margin-top: 20px;
+}
+h2 {
+  padding-top:20px;
+}
+.runners-list .name{
+  padding-top: 30px;
+}
+.runners-list .btn-lg {
+  padding: 15px 30px;
+  font-size: 25px;
+  line-height: 1.2;
+  border-radius: 6px;
+}
+.runners-list .nb-seats h3 {
+  margin-top: 18px;
+}
+.runners-list .btn-group {
+  padding: 15px 15px 15px;
+}
+.runners-list h3 {
+  font-size: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.runners-form .btn-lg {
+  margin-top: 20px;
+  width: 100%;
+  height:70px;
+  font-size:30px;
+
+}
+
+.tab-container{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  border-color: #27AD23;
+}
+
+
+.widget{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  border-color: #27AD23;
+}
+
+.widget .widget-body{
+  padding: 20px;
+  clear:both;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+.widget .widget-body .column{
+  float: left;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
+
+.widget .widget-body .unit{
+  font-size: 20px;
+  vertical-align: text-top;
+}
+
+.widget .widget-body .title{
+  font-size: 28px;
+  vertical-align: text-bottom;
+}
+
+.widget .widget-body .description{
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+

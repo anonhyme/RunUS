@@ -1,0 +1,41 @@
+<div>
+    <h4><b>Current run</b></h4>
+    <blockquote ng-show = "runner.currentRun != null">
+    	no run going on
+    </blockquote>
+    <div class = "row" ng-show = "runner.currentRun">
+    	<div >
+	    	<div class="widget pull-left">
+	    		<div class = "widget-body">
+		    		
+		    		<div class="column description">
+    					<b>Speed: </b> 
+    				</div> 
+
+    				<div class="column">
+    					<div class = "title"> {{runner.currentRun.speed}}</div>
+    					<div class = "unit">
+			    			m/s
+		    			</div>
+    				</div>	
+	    		</div>
+	    	</div>
+	    	<div class="widget pull-left">
+	    		<div class = "widget-body">
+		    		
+		    		<div class="column description">
+    					<b>Average speed: </b> 
+    				</div> 
+
+    				<div class="column">
+    					<div class = "title"> {{runner.currentRun.averageSpeed}}</div>
+    					<div class = "unit">
+			    			m/s
+		    			</div>
+    				</div>	
+	    		</div>
+	    	</div>
+	    </div>	
+    </div>
+    
+</div>

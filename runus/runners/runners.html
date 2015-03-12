@@ -1,0 +1,25 @@
+
+<div class="col-lg-12">
+	<div>
+	    <h1 class="page-header col-lg-12">Runners
+	        <small>Welcome to the page with all runners details</small>
+	    </h1>
+	</div>
+
+	<div class="col-lg-12">
+		<add-runner></add-runner>
+	</div>
+
+	<div class="container col-lg-12">
+		<h2> Runners</h2>
+	    <div class="list-group-item" ng-repeat="runner in runners">
+	    	<h3 class = "list-group-item-heading">
+	    		<b>Name:</b> {{runner.name}}
+	    		<small> <b>PanId:</b> {{runner.panId}}</small>
+	    	</h3>
+	    	
+	        <!-- Product Tabs  -->
+	        <runners-tabs></runners-tabs>
+	  </div>     
+	</div>
+</div>
